@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "libre bodoni";
+    font-family: "merriweather";
+    src: url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@0;1&family=Merriweather:ital@0;1&display=swap');
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #0a3641;
+}
+
+h1,
+h2 {
+    font-family: "libre bodoni", "merriweather", 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: #5f4c3e;
+}
+
+header a {
+    color: #0a3641
+}
+
+.cta {
+    background-color: #5f4c3e;
+    color: #fff;
+}
+
+footer {
+    background-color: #0a3641;
+}
+
+footer a {
+    color: #fff;
+}
+
+/*Home page*/
+
+.promo {
+    background-color: #5f4c3e;
+    color: #fff;
+}
+
+/*Jacket page*/
+
