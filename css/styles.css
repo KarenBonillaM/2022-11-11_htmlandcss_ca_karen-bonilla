@@ -4,9 +4,46 @@
     src: url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@0;1&family=Merriweather:ital@0;1&display=swap');
 }
 
+header {
+    position: relative;
+}
+
+header nav {
+    position: absolute;
+    background-color: #ffff;
+}
+
+header nav a {
+    color: #5f4c3e;
+}
+
+header nav,
+#menu-checkbox {
+    display: none;
+}
+
+header li {
+    border: #0a3641 1px solid;
+    padding: 15px 30px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+header input {
+    background-color: #ffff;
+    border-radius: 10px;
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: #0a3641;
+    margin: 0;
 }
 
 h1,
@@ -18,29 +55,112 @@ h1 {
     color: #5f4c3e;
 }
 
-header a {
-    color: #0a3641
+.logo {
+    width: 15%;
+}
+
+footer {
+    background-color: #0a3641;
+    min-height: 80px;
+}
+
+.main-image img {
+    width: 50%;
+}
+
+.jackets img {
+    width: 15%;
+}
+
+@media (min-width: 600px) {
+header nav {
+    display: contents;
+    position: static;
+}
+
+header nav a {
+    color: #0a3641;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header li {
+    display: inline-block;
+    border: none;
+}
+
+.mobil,
+.hamburguer-icon {
+    display: none;
+}
+}
+
+/* Links */
+a {
+    text-decoration: none;
 }
 
 .cta {
     background-color: #5f4c3e;
     color: #fff;
-}
-
-footer {
-    background-color: #0a3641;
+    font-size: 1em;
+    padding: 10px 25px;
+    border-radius: 5px;
 }
 
 footer a {
     color: #fff;
 }
 
-/*Home page*/
+.active {
+    text-decoration: underline;
+}
+
+/* Home page */
 
 .promo {
     background-color: #5f4c3e;
     color: #fff;
+    min-height: 40px;
+    text-align: center;
 }
 
-/*Jacket page*/
+.welcome {
+    background-image: url(../images/homepage_desk.jpg);
+    background-size: cover;
+    min-height: 700px;
+}
+
+/* Jacket page */
+
+.red_jacket img {
+    width: 50%;
+}
+
+/* Check out */
+input {
+    border: 1.5px solid #0a3641;
+    background-color: #a3a09e;
+    border-radius: 5px;
+}
+
+
+/* About Us */
+.about_us img {
+    width: 20%;
+}
+
+.about_us {
+    background-image: url(/images/about_us.jpg);
+    background-size: cover;
+    min-height: 600px;
+}
+
+/* Contact */
+.map img {
+    width: 45%;
+    border-radius: 50%;
+}
+
+
 

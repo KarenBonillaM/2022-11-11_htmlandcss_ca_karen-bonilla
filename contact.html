@@ -8,37 +8,49 @@
     <title>Rainy Days | Contact</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@0;1&family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad1493ca4b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <a href="index.html">
-            <img src="images/RainyDays_Logo.png" alt="Logo for RainyDays Website">
+            <img src="images/RainyDays_Logo.png" alt="Logo for RainyDays Website" class="logo">
         </a>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburguer-icon"><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul>
                 <li><a href="men.html">Men</a></li>
                 <li><a href="women.html">Women</a></li>
+                <div class="mobil">
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact" class="active">Contact</a></li>
+                </div>
             </ul>
         </nav>
+        <section class="search">
+            <input type="search" id="site-search" name="site-search">
+        </section>
     </header>
     <main>
-        <section>
-
-        </section>
-        <section>
-            <h1>Contact Us</h1>
-            <p>070-707070707</p>
-            <p>services@rainydays.com</p>
-            <p>We are located at Maria Prästgårsgata 56</p>
-            <p>118 55</p>
-            <p>Stockholm, Sweden</p>
+        <section class="map">
+            <div>
+                <img src="/images/location_rainydays.jpg" alt="Rainydays Location">
+            </div>
+            <div>
+                <h1>Contact Us</h1>
+                <p>070-707070707</p>
+                <p>services@rainydays.com</p>
+                <p>We are located at Maria Prästgårsgata 56</p>
+                <p>118 55</p>
+                <p>Stockholm, Sweden</p>
+            </div>
         </section>
     </main>
     <footer>
         <nav>
             <ul>
                 <li><a href="about_us.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html"class="active">Contact</a></li>
             </ul>
         </nav>
     </footer>

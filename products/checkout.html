@@ -8,23 +8,51 @@
     <title>Rainy Days | Check out</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@0;1&family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad1493ca4b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <a href="index.html">
-            <img src="../images/RainyDays_Logo.png" alt="Logo for RainyDays Website">
+            <img src="../images/RainyDays_Logo.png" alt="Logo for RainyDays Website" class="logo">
         </a>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburguer-icon"><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul>
                 <li><a href="men.html">Men</a></li>
                 <li><a href="women.html">Women</a></li>
+                <div class="mobil">
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </div>
             </ul>
         </nav>
+        <section class="search">
+            <input type="search" id="site-search" name="site-search">
+        </section>
     </header>
     <main>
-        <section>
-            <a href="../" class="cta">Buy now</a>
-        </section>
+        <form>
+            <fieldset>
+                <legend>Delivery</legend>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <fieldset>
+                <legend>Payment</legend>
+                <label for="card_number">Card Number</label>
+                <input type="tel" name="card_number" id="card_number">
+                <label for="yyyymm">YYYY/MM</label>
+                <input type="month" name="yyyymm" id="yyyymm">
+                <label for="cvv">CVV</label>
+                <input type="tel" name="cvv" id="cvv">
+            </fieldset>
+            <input type="submit" value="Buy Now" class="cta">
+        </form>
         <section>
             <h2>In your shopping car</h2>
             <div>

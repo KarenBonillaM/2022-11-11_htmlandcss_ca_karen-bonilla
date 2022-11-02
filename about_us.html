@@ -8,28 +8,42 @@
     <title>Rainy Days | About</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@0;1&family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad1493ca4b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <a href="index.html">
-            <img src="images/RainyDays_Logo.png" alt="Logo for RainyDays Website">
+            <img src="images/RainyDays_Logo.png" alt="Logo for RainyDays Website" class="logo">
         </a>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburguer-icon"><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul>
                 <li><a href="men.html">Men</a></li>
                 <li><a href="women.html">Women</a></li>
+                <div class="mobil">
+                    <li><a href="about_us.html" class="active">About Us</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </div>
             </ul>
         </nav>
+        <section class="search">
+            <input type="search" id="site-search" name="site-search">
+        </section>
     </header>
     <main>
-        <img src="images/about_us.jpg" alt="two people from behind hiking">
-        <p>We love Rainy days! Weather you are enjoying a hot coffee on kilimanjaro or jumping in mud puddles with your children - we will always keep you dry and comfortable.</p>
-        <p>We literally “have your back” in all enviroments and to a price you can live with, without loosing sight on what is important for you - enjoyin the wild nature and pushing you out of your comfort zone!</p> 
+        <section class="about_us">
+            <img src="/images/RainyDays_Logo.png" alt="logo, pushing the comfort zone/ Rainydays/ blue montain">
+        </section>
+        <section>
+            <p>We love Rainy days! Weather you are enjoying a hot coffee on kilimanjaro or jumping in mud puddles with your children - we will always keep you dry and comfortable.</p>
+            <p>We literally “have your back” in all enviroments and to a price you can live with, without loosing sight on what is important for you - enjoyin the wild nature and pushing you out of your comfort zone!</p> 
+        </section>
     </main>
     <footer>
         <nav>
             <ul>
-                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="about_us.html"class="active">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
