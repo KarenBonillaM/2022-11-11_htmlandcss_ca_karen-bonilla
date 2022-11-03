@@ -5,7 +5,11 @@
 }
 
 header {
+    display: flex;
+    align-items: center;
     position: relative;
+    border: 2px solid #0a3641;
+    padding: 15px;
 }
 
 header nav {
@@ -56,23 +60,21 @@ h1 {
 }
 
 .logo {
-    width: 15%;
+    width: 20vh;
 }
 
 footer {
     background-color: #0a3641;
     min-height: 80px;
+    display: flex;
+    align-items: center;
 }
 
-.main-image img {
-    width: 50%;
+footer ul {
+    margin: 0;
 }
 
-.jackets img {
-    width: 15%;
-}
-
-@media (min-width: 600px) {
+@media(min-width: 600px) {
 header nav {
     display: contents;
     position: static;
@@ -87,6 +89,7 @@ header nav a {
 header li {
     display: inline-block;
     border: none;
+    padding: 0 20px;
 }
 
 .mobil,
@@ -125,10 +128,35 @@ footer a {
     text-align: center;
 }
 
+.promo p {
+    margin: 0;
+    padding-top: 10px;
+}
+
 .welcome {
     background-image: url(../images/homepage_desk.jpg);
     background-size: cover;
-    min-height: 700px;
+    background-position-x: center;
+    background-position-y: center;
+    min-height: 74vh;
+    text-align: center;
+}
+
+.welcome h1 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 30px;
+}
+
+/*Women/Men*/
+.main-image img {
+    width: 50%;
+}
+
+.jackets img {
+    width: 15%;
 }
 
 /* Jacket page */
@@ -147,13 +175,22 @@ input {
 
 /* About Us */
 .about_us img {
-    width: 20%;
+    width: 40%;
 }
 
 .about_us {
     background-image: url(/images/about_us.jpg);
     background-size: cover;
-    min-height: 600px;
+    background-position-x:center;
+    background-position-y: bottom;
+    min-height: 70vh;
+    position: relative;
+}
+
+.about-logo {
+    position: absolute;
+    top: 90px;
+    left: 900px;
 }
 
 /* Contact */
@@ -161,6 +198,3 @@ input {
     width: 45%;
     border-radius: 50%;
 }
-
-
-
