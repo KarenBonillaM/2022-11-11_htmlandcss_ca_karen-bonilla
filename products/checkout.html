@@ -32,44 +32,58 @@
             <label for="site-search" class="magnifying-glass"><i class="fa-solid fa-magnifying-glass"></i></label>
         </section>
     </header>
-    <main>
-        <form>
-            <fieldset>
-                <legend>Delivery</legend>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                <label for="address">Address</label>
-                <input type="text" name="address" id="address">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-            </fieldset>
-            <fieldset>
-                <legend>Payment</legend>
-                <label for="card_number">Card Number</label>
-                <input type="tel" name="card_number" id="card_number">
-                <label for="yyyymm">YYYY/MM</label>
-                <input type="month" name="yyyymm" id="yyyymm">
-                <label for="cvv">CVV</label>
-                <input type="tel" name="cvv" id="cvv">
-            </fieldset>
-            <input type="submit" value="Buy Now" class="cta">
-        </form>
+    <main class="checkout-main">
+        <section>
+            <form class="checkout-form">
+                <fieldset>
+                    <legend>Delivery</legend>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment</legend>
+                    <div>
+                        <label for="card_number">Card Number</label>
+                        <input type="tel" name="card_number" id="card_number">
+                    </div>
+                    <div>
+                        <label for="yyyymm">YYYY/MM</label>
+                        <input type="month" name="yyyymm" id="yyyymm">
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="tel" name="cvv" id="cvv">
+                    </div>
+                </fieldset>
+                <input type="submit" value="Buy Now" class="cta">
+            </form>
+        </section>
         <section>
             <h2>In your shopping car</h2>
-            <div>
+            <div class="shopping-details">
                 <p>Insulated red jacket.</p>
                 <p>Kr 1.500,00</p>
             </div>
-            <div>
+            <div class="shopping-details">
                 <p>Shipping</p>
                 <p>kr 00,00</p>
             </div>
-            <div>
+            <div class="shopping-details">
                 <p>Total</p>
                 <p>Kr 1.500,00</p>
             </div>
         </section>
-        <section>
+        <section class="checkout-img">
             <img src="../images/man1.jpg" alt="man wearing a red jacket loocking to the sky in the mountains">
         </section>
     </main>

@@ -9,7 +9,7 @@ header {
     align-items: center;
     position: relative;
     border: 2px solid #0a3641;
-    padding: 15px;
+    padding: 10px 15px;
 }
 
 header nav {
@@ -46,8 +46,11 @@ header input {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    color: #0a3641;
+    min-height: 100vh;
     margin: 0;
+    color: #0a3641;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 h1,
@@ -92,10 +95,19 @@ header li {
     padding: 0 20px;
 }
 
+main {
+    min-height: 470px;
+}
+
 .mobil,
 .hamburguer-icon {
     display: none;
 }
+/*Home Page*/
+.welcome-phrase {
+    background-color: rgb(10, 54, 65, 0.4);
+}
+
 }
 
 /* Links */
@@ -109,10 +121,16 @@ a {
     font-size: 1em;
     padding: 10px 25px;
     border-radius: 5px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 90px;
+    font-weight: bold;
 }
 
 footer a {
     color: #fff;
+    padding-left: 20px;
 }
 
 .active {
@@ -133,6 +151,10 @@ footer a {
     padding-top: 10px;
 }
 
+.main-home {
+    max-height: 470px;
+}
+
 .welcome {
     background-image: url(../images/homepage_desk.jpg);
     background-size: cover;
@@ -151,18 +173,75 @@ footer a {
 }
 
 /*Women/Men*/
+.main-jackets {
+    display: flex;
+}
+
+.div-jackets {
+    display: flex;
+    margin-top: 100px;
+}
+
 .main-image img {
-    width: 50%;
+    max-width: 600px;
+}
+
+.jackets {
+    max-width: 800px;
+    margin: auto;
+}
+
+.jackets h1 {
+    text-align: center;
+}
+
+.image-jacket {
+    max-width: 250px;
+    flex-shrink: 0;
 }
 
 .jackets img {
-    width: 15%;
+   width: 90%;
+   border: #0a3641 solid 2px;
+}
+
+.info-jacket {
+    max-width: 325px;
 }
 
 /* Jacket page */
-
 .red_jacket img {
-    width: 50%;
+    max-width: 600px;
+    width: 100%;
+}
+
+.main-jacket {
+    display: flex;
+}
+
+.jacket-info {
+    margin-top: 150px;
+    margin-left: 300px;
+    margin-right: 200px;
+}
+
+.size {
+    text-align: center;
+}
+
+.size p {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.5em;
+    border: #0a3641 solid 1px;
+    background-color: #0a3641;
+    color: #ffff;
+}
+
+.buy-jacket {
+    text-align: center;
+    margin-top: 50px;
 }
 
 /* Check out */
@@ -172,6 +251,24 @@ input {
     border-radius: 5px;
 }
 
+.checkout-main {
+    max-width: 1325px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+}
+
+.checkout-main > * {
+    flex: 1;
+}
+
+.shopping-details {
+    display:flex;
+    }
+
+.checkout-main img {
+    width: 200px;
+}
 
 /* About Us */
 .about_us img {
@@ -183,7 +280,7 @@ input {
     background-size: cover;
     background-position-x:center;
     background-position-y: bottom;
-    min-height: 70vh;
+    min-height: 55vh;
     position: relative;
 }
 
@@ -195,6 +292,11 @@ input {
 
 /* Contact */
 .map img {
-    width: 45%;
+    max-width: 600px;
     border-radius: 50%;
+}
+
+.contact-main {
+    display: flex;
+    align-items: center;
 }
