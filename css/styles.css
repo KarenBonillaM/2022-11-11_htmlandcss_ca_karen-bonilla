@@ -4,12 +4,19 @@
     src: url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@0;1&family=Merriweather:ital@0;1&display=swap');
 }
 
+header, 
+footer {
+    width: 100%;
+    position: sticky;
+}
+
 header {
-    display: flex;
-    align-items: center;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     border: 2px solid #0a3641;
     padding: 10px 15px;
+    top: 0;
+    background-color: #ffff;
 }
 
 header nav {
@@ -71,6 +78,7 @@ footer {
     min-height: 80px;
     display: flex;
     align-items: center;
+    bottom: 0;
 }
 
 footer ul {
@@ -78,7 +86,12 @@ footer ul {
 }
 
 @media(min-width: 600px) {
-header nav {
+.header-search {
+    display: flex;
+    align-items: center;
+}
+
+    header nav {
     display: contents;
     position: static;
 }
@@ -182,6 +195,10 @@ footer a {
     margin-top: 100px;
 }
 
+.main-image {
+    position: fixed;
+}
+
 .main-image img {
     max-width: 600px;
 }
@@ -189,6 +206,7 @@ footer a {
 .jackets {
     max-width: 800px;
     margin: auto;
+    padding-left: 50%;
 }
 
 .jackets h1 {
