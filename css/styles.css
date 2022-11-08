@@ -212,6 +212,36 @@ main {
     grid-row: 3;
 }
 
+/*Jacket page*/
+.red_jacket img {
+    max-width: 700px;
+    width: 62%;
+    margin: auto;
+}
+
+.jacket-info {
+    max-width: 700px;
+    width: 70%;
+    margin: auto;
+}
+
+.size p {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.5em;
+    border: #0a3641 solid 1px;
+    background-color: #0a3641;
+    color: #ffff;
+}
+
+.main-jacket {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0;
+    margin-bottom: -25px;
+}
+
 /* Links */
 .cta {
     background-color: #5f4c3e;
@@ -304,6 +334,42 @@ main {
     margin: 0;
 }
 
+/*Jacket page*/
+.size p {
+    display: inline-block;
+    padding: 5px;
+    margin: 7px;
+    font-size: 0.8em;
+    border: #0a3641 solid 1px;
+    background-color: #0a3641;
+    color: #ffff;
+}
+
+.red_jacket img {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+}
+
+.jacket-info {
+    max-width: 300px;
+    width: 50%;
+    margin: auto;
+}
+
+.main-jacket {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+
+.jacket-info h2 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
 /* Links */
 .cta {
     font-size: 0.7em;
@@ -381,29 +447,24 @@ footer a {
 }
 
 /* Jacket page */
-.red_jacket img {
-    max-width: 600px;
-    width: 100%;
+.main-jacket {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0;
+    margin-bottom: -25px;
 }
 
-.jacket-info {
-    margin-top: 150px;
-    margin-left: 300px;
-    margin-right: 200px;
+.red_jacket {
+    margin: auto;
 }
 
-.size {
+.jacket-info h2 {
     text-align: center;
 }
 
-.size p {
-    display: inline-block;
-    padding: 20px;
-    margin: 10px;
-    font-size: 1.5em;
-    border: #0a3641 solid 1px;
-    background-color: #0a3641;
-    color: #ffff;
+.size {
+    justify-content: center;
+    display:flex;
 }
 
 .buy-jacket {
