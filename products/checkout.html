@@ -12,18 +12,18 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
+        <a href="/index.html">
             <img src="../images/RainyDays_Logo.png" alt="Logo for RainyDays Website" class="logo">
         </a>
         <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="hamburguer-icon"><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul>
-                <li><a href="men.html">Men</a></li>
-                <li><a href="women.html">Women</a></li>
+                <li><a href="/men.html">Men</a></li>
+                <li><a href="/women.html">Women</a></li>
                 <div class="mobil">
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="/about_us.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
                 </div>
             </ul>
         </nav>
@@ -38,54 +38,51 @@
         </section>
     </header>
     <main class="checkout-main">
-        <section>
+        <section class="form">
             <form class="checkout-form">
                 <fieldset>
                     <legend>Delivery</legend>
                     <div>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" placeholder="Name">
                     </div>
                     <div>
-                        <label for="address">Address</label>
-                        <input type="text" name="address" id="address">
+                        <input type="text" name="address" id="address" placeholder="Address">
                     </div>
                     <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder="Email">
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Payment</legend>
                     <div>
-                        <label for="card_number">Card Number</label>
-                        <input type="tel" name="card_number" id="card_number">
+                        <input type="tel" name="card_number" id="card_number" placeholder="Card Number">
                     </div>
-                    <div>
-                        <label for="yyyymm">YYYY/MM</label>
-                        <input type="month" name="yyyymm" id="yyyymm">
-                    </div>
-                    <div>
-                        <label for="cvv">CVV</label>
-                        <input type="tel" name="cvv" id="cvv">
+                    <div class="card-info">
+                        <div class="card-date">
+                            <input type="month" name="yyyymm" id="yyyymm" placeholder="YYYY/MM">
+                        </div>
+                        <div class="card-cvv">
+                            <input type="tel" name="cvv" id="cvv" placeholder="CVV">
+                        </div>
                     </div>
                 </fieldset>
-                <input type="submit" value="Buy Now" class="cta">
+                <a href="../products/checkout_success.html" class="cta">Buy Now</a>
+                <input type="submit" value="Buy Now" class="input-submit">
             </form>
         </section>
-        <section>
+        <section class="details">
             <h2>In your shopping car</h2>
-            <div class="shopping-details">
+            <div>
                 <p>Insulated red jacket.</p>
-                <p>Kr 1.500,00</p>
+                <p class="amount">Kr 1.500,00</p>
             </div>
-            <div class="shopping-details">
+            <div>
                 <p>Shipping</p>
-                <p>kr 00,00</p>
+                <p class="amount">kr 00,00</p>
             </div>
-            <div class="shopping-details">
+            <div class="shopping-total">
                 <p>Total</p>
-                <p>Kr 1.500,00</p>
+                <p class="amount">Kr 1.500,00</p>
             </div>
         </section>
         <section class="checkout-img">
@@ -95,8 +92,8 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/about_us.html">About Us</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
         <section class="social-media">
