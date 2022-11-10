@@ -195,7 +195,7 @@ main {
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto auto 1fr;
-    width: 600px;
+    width: 180%;
 }
 
 .div-jackets h2 {
