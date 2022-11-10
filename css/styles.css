@@ -595,6 +595,10 @@ div > .amount {
     font-weight: bold;
 }
 
+.checkout-form label {
+    display: none;
+}
+
 .checkout-form input {
     margin-bottom: 15px;
     padding: 12px 100px 12px 20px;
