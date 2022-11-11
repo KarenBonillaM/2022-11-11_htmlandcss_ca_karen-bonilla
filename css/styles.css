@@ -689,6 +689,40 @@ div > .amount {
     grid-template-columns: 1fr 1fr;
 }
 
+/*Checkout Success*/
+.checkout-content {
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+}
+.checkout-content h1 {
+    margin-top: 50px;
+    justify-self: center;
+}
+
+.box {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    top: 60px;
+    left: 0px;
+    margin-bottom: 50px;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.checkout-content p {
+    margin-bottom: 120px;
+    justify-self: center;
+}
+
+@keyframes moving {
+    100% {
+        top: 60px;
+        left: 43.5%;
+    }
+}
+
 
 /* Links
 https:www.youtube.com/watchvcGT8ZDJPPqY
