@@ -26,6 +26,7 @@ header {
 .hamburguer-icon {
     grid-column: 1;
     grid-row: 1;
+    font-size: 1.5em;
 }
 
 .header-search {
@@ -175,6 +176,7 @@ header input {
     display: none;
 }
 
+
 main {
     min-height: 470px;
 }
@@ -210,6 +212,7 @@ main {
 
 .main-mobil-img {
     display: none;
+    border-radius: 15px;
 }
 
 .div-jackets {
@@ -270,13 +273,9 @@ main {
 }
 
 .size p {
-    display: inline-block;
     padding: 20px;
     margin: 10px;
     font-size: 1.5em;
-    border: #0a3641 solid 1px;
-    background-color: #0a3641;
-    color: #ffff;
 }
 
 .main-jacket {
@@ -317,6 +316,14 @@ main {
     left: 900px;
 }
 
+.about_us img {
+    width: 40%;
+}
+
+.about_us-content {
+    padding: 20px;
+}
+
 /* Links */
 .cta {
     background-color: #5f4c3e;
@@ -331,7 +338,6 @@ main {
     font-weight: bold;
 }
 
-
 }
 
 /*mobile styles*/
@@ -340,6 +346,11 @@ h1 {
     font-size: 1.5em;
 }
 
+.search-box {
+    display: none;
+}   
+
+/*Home*/
 .welcome {
     background-image: url(../images/homepage_mobil.jpg);
     background-size: cover;
@@ -348,9 +359,6 @@ h1 {
     min-height: 45vh;
     text-align: center;
 }
-.search-box {
-    display: none;
-}   
 
 .welcome-phrase {
     display: none;
@@ -359,6 +367,7 @@ h1 {
 .welcome-mobil-content {
     text-align: center;
     font-size: 0.7em;
+    margin: 30px;
 }
 
 .mobil-buttons {
@@ -366,9 +375,9 @@ h1 {
 }
 
 .mobil-buttons a {
-    font-size: 0.6em;
+    font-size: 0.9em;
     width: 70px;
-    padding: 10px 3px;
+    padding: 15px;
 }
 
 /*Woman Men*/
@@ -384,6 +393,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+    margin-bottom: 30px;
 }
 
 .div-jackets p {
@@ -405,6 +415,7 @@ h1 {
     width: 80%;
     grid-row: 1;
     justify-self: center;
+    border-radius: 5px;
 }
 
 .div-jackets a {
@@ -417,13 +428,9 @@ h1 {
 
 /*Jacket page*/
 .size p {
-    display: inline-block;
     padding: 5px;
     margin: 7px;
     font-size: 0.8em;
-    border: #0a3641 solid 1px;
-    background-color: #0a3641;
-    color: #ffff;
 }
 
 .red_jacket img {
@@ -485,6 +492,16 @@ h1 {
     position: relative;
     top: 40px;
     left: 200px;
+    width: 150px;
+}
+
+.about_us img {
+    width: 100%;
+}
+
+.about_us-content {
+    padding: 15px;
+    font-size: 0.8em;
 }
 
 /* Links */
@@ -599,6 +616,18 @@ footer a {
     display:flex;
 }
 
+.size p {
+    display: inline-block;
+    border: #0a3641 solid 1px;
+    background-color: #0a3641;
+    color: #ffff;
+}
+
+.size p:hover {
+    background-color: #ffff;
+    color: #0a3641;
+}
+
 .buy-jacket {
     text-align: center;
     margin-top: 50px;
@@ -701,19 +730,11 @@ div > .amount {
 }
 
 /* About Us */
-.about_us img {
-    width: 40%;
-}
-
 .about_us {
     background-size: cover;
     background-position-x:center;
     background-position-y: bottom;
     position: relative;
-}
-
-.about_us-content {
-    padding: 20px;
 }
 
 /* Contact */
