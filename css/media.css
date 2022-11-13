@@ -1,0 +1,400 @@
+/*Desktop styles*/
+@media(min-width: 800px) {
+    h1 {
+        font-size: 2.5em;
+     }
+    
+    .header-search {
+        display: flex;
+        align-items: center;
+        justify-self: end;
+        margin-right: 20px;
+    }
+    
+    header nav {
+        display: contents;
+        position: static;
+        grid-column: 2;
+    }
+    
+    header a {
+        grid-column: 1;
+        justify-self: start;
+        padding-left: 20px;
+    }
+    
+    header nav a {
+        color: #0a3641;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+    header li {
+        display: inline-block;
+        border: none;
+        padding: 0 20px;
+    }
+    
+    header input {
+        background-color: #ffff;
+        border-radius: 10px;
+        height: 25px;
+    }
+    
+    .shopping-car {
+        display: contents;
+        font-weight: 700;
+        font-size: 1.7em;
+        margin-right: 20px;
+    }
+    
+    .welcome-mobil-content {
+        display: none;
+    }
+    
+    .mobil-buttons {
+        display: none;
+    }
+    
+    
+    main {
+        min-height: 470px;
+    }
+    
+    .mobil,
+    .hamburguer-icon {
+        display: none;
+    }
+    
+    .welcome {
+        background: url(../images/homepage_desk.jpg) center center;
+        background-size: cover;
+        min-height: 74vh;
+        text-align: center;
+    }
+    
+    /*Women Men*/
+    .main-jackets {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+    
+    .jackets {
+        display: grid;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr;
+        margin: auto;
+        margin-left: 20px;
+        gap: 30px;
+    }
+    
+    .main-mobil-img {
+        display: none;
+        border-radius: 15px;
+    }
+    
+    .div-jackets {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto auto 1fr;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    
+    .div-jackets h2 {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: end;
+        margin-bottom: 0px;
+    }
+    
+    .price {
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    
+    .div-jackets p {
+        grid-row: 3;
+        padding-right: 2opx;
+    }
+    
+    .div-jackets .price {
+        grid-row: 2;
+    }
+    
+    .div-jackets img {
+        width: 33%;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 5;
+        align-self: center;
+        margin-left: 45px;
+        border-radius: 15px;
+    }
+    
+    .div-jackets a {
+        grid-column: 2;
+        grid-row: 4;
+        align-self: start;
+    }
+    
+    /*Jacket page*/
+    .red_jacket img {
+        max-width: 700px;
+        width: 62%;
+        margin: auto;
+    }
+    
+    .jacket-info {
+        max-width: 700px;
+        width: 70%;
+        margin: auto;
+    }
+    
+    .size p {
+        padding: 20px;
+        margin: 10px;
+        font-size: 1.5em;
+    }
+    
+    .main-jacket {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 0;
+        margin-bottom: -25px;
+    }
+    
+    /*Checkout page*/
+    .checkout-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+    }
+    
+    .checkout-img {
+        align-self: center;
+        justify-self: right;
+    }
+    
+    .form {
+        justify-self: left;
+    }
+    
+    /*About Us*/
+    .title {
+        display: none;
+    }
+    
+    .about_us {
+        background: url(/images/about_us.jpg) center bottom;
+        min-height: 55vh;
+        background-size: cover;
+    }
+    
+    .about-logo {
+        position: absolute;
+        top: 90px;
+        left: 900px;
+    }
+    
+    .about_us img {
+        width: 40%;
+    }
+    
+    .about_us-content {
+        padding: 20px;
+    }
+    
+    /* Links */
+    .cta {
+        background-color: #5f4c3e;
+        color: #fff;
+        font-size: 1em;
+        padding: 10px 25px;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 90px;
+        font-weight: bold;
+    }
+    
+    }
+    
+    /*mobile styles*/
+    @media(max-width: 799px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .search-box {
+        display: none;
+    }
+    
+    .main-mobil-img img,
+    .about_us img,
+    .red_jacket img {
+        width: 100%;
+    }
+    
+    header nav {
+        max-height: 224px;
+    }
+    
+    /*Home*/
+    .welcome {
+        background: url(../images/homepage_mobil.jpg) center;
+        background-size: cover;
+        min-height: 45vh;
+        text-align: center;
+    }
+    
+    .welcome-phrase {
+        display: none;
+    }
+    
+    .welcome-mobil-content {
+        text-align: center;
+        font-size: 0.7em;
+        margin: 30px;
+    }
+    
+    .mobil-buttons {
+        display: flex;
+    }
+    
+    .mobil-buttons a {
+        font-size: 0.9em;
+        width: 70px;
+        padding: 15px;
+    }
+    
+    /*Woman Men*/
+    .main-image img {
+        display: none;
+    }
+    
+    .jackets {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+    
+    .div-jackets p {
+        display: none;
+    }
+    
+    .div-jackets h2 {
+        grid-row: 2;
+        font-size: 0.7em;
+        justify-self: center;
+    }
+    
+    .div-jackets {
+        display:grid;
+        grid-template-rows: 1fr auto auto;
+    }
+    
+    .div-jackets img {
+        width: 80%;
+        grid-row: 1;
+        justify-self: center;
+        border-radius: 5px;
+    }
+    
+    .div-jackets a {
+        grid-row: 3;
+    }
+    
+    .jackets h1 {
+        margin: 0;
+    }
+    
+    /*Jacket page*/
+    .size p {
+        padding: 5px;
+        margin: 7px;
+        font-size: 0.8em;
+    }
+    
+    .red_jacket img {
+        max-width: 700px;
+        margin: auto;
+    }
+    
+    .jacket-info {
+        max-width: 300px;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .main-jacket {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 0;
+        margin-bottom: 0px;
+        justify-content: center;
+    }
+    
+    .jacket-info h2 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+    /*Checkout page*/
+    .checkout-main {
+        display: grid;
+        grid-template-rows: 1fr 1fr ;
+    }
+    
+    .checkout-img {
+        grid-row: 1;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .details {
+       grid-row: 2;
+    }
+    
+    .form {
+        justify-self: center;
+    }
+    
+    /*About Us*/
+    .about_us {
+        background: url(/images/about_us-mobil.jpg) center bottom;
+        min-height: 45vh;
+        background-size: cover;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .about-logo {
+        position: relative;
+        top: 40px;
+        left: 200px;
+        width: 150px;
+    }
+    
+    .about_us-content {
+        padding: 15px;
+        font-size: 0.8em;
+    }
+    
+    /* Links */
+    .cta {
+        font-size: 0.7em;
+        padding: 6px 10px;
+        width: 90px;
+        background-color: #5f4c3e;
+        color: #fff;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 90px;
+        font-weight: bold;
+    }
+}

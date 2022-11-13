@@ -1,0 +1,39 @@
+/* Home page */
+
+.promo {
+    background-color: #5f4c3e;
+    color: #fff;
+    min-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.promo p {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.main-home {
+    max-height: 470px;
+}
+
+.welcome-phrase {
+    background-color: rgb(10, 54, 65, 0.4);
+}
+
+.welcome h1 {
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 30px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+}   
+
+.welcome h2 {
+    padding-bottom: 30px;
+    font-size: 1.7em;
+    font-family: helvetica, arial, sans-serif;
+    margin: 0px;
+}

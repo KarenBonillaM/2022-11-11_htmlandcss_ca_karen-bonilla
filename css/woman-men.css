@@ -1,0 +1,17 @@
+/*Women/Men*/
+.main-image img {
+    width: 100%;
+}
+
+.jackets h1 {
+    text-align: center;
+    grid-column: -1/1;
+}
+
+.div-jackets p {
+    grid-column: 2;
+}
+
+.jackets img {
+   border: #0a3641 solid 2px;
+}

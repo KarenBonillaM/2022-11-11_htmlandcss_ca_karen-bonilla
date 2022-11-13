@@ -1,0 +1,20 @@
+.map {
+    align-self: center;
+    justify-self: center;
+} 
+
+.map img {
+    max-width: 550px;
+    border-radius: 50%;
+    width: 90%;
+}
+
+.contact-info {
+    align-self: center;
+    justify-self: center;
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

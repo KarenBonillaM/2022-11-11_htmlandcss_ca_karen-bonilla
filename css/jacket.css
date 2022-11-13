@@ -1,0 +1,36 @@
+.main-jacket {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0;
+    margin-bottom: -25px;
+}
+
+.red_jacket {
+    margin: auto;
+}
+
+.jacket-info h2 {
+    text-align: center;
+}
+
+.size {
+    justify-content: center;
+    display:flex;
+}
+
+.size p {
+    display: inline-block;
+    border: #0a3641 solid 1px;
+    background-color: #0a3641;
+    color: #ffff;
+}
+
+.size p:hover {
+    background-color: #ffff;
+    color: #0a3641;
+}
+
+.buy-jacket {
+    text-align: center;
+    margin-top: 50px;
+}
