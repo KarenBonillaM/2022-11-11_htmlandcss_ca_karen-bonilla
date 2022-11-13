@@ -1,42 +1,26 @@
 # 2022-11-11_htmlandcss_ca_karen-bonilla
 
-# Project Title
-
-A simple overview of use/purpose.
-
-## Description
-
-An in-depth paragraph about your project and overview of use.
-
-## Getting Started
-
-### Dependencies
-
-- Describe any prerequisites, libraries, OS version, etc., needed before installing the program.
-- ex. Windows 10
-
-### Installing
-
-- How/where to download your program
-- Any modifications needed to be made to files/folders
-
-### Executing program
-
-- hosted link
-
-OR
-
-- How to run the program
-- Step-by-step bullets
-
-code blocks for commands
+RainyDays
 
 ## Help
 
-Any advice for common problems or issues.
+- https://www.youtube.com/watch?v=cGT8ZDJPPqY
+  CSS Width NOT Working | CSS Fixed Headers Footers Tutorial
+  Dave Gray
 
-- command to run if the program contains helper info
+- Compressed images: Adobe Photoshop.
+
+All images by
+
+- Image https://www.freepik.com
+- https://unsplash.com
 
 ## Authors
 
-Contributors' names and contact info
+# links
+
+Figma prototype
+https://www.figma.com/file/loWF1eYnurbHnbgGFzm06s/2022-09-24_Design1_FP_Karen-Bonilla-Moreno_FP?node-id=250%3A220
+
+Netlify
+https://famous-hamster-d2c939.netlify.app
