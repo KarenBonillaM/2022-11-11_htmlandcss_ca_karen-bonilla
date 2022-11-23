@@ -30,11 +30,11 @@ header {
 }
 
 label h3 {
-    display: none;
+    display:none;
 }
 
 a h3 {
-    display: none;
+    display:none;
 }
 
 .header-search {
