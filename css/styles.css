@@ -119,6 +119,11 @@ footer ul {
     padding-right: 20px;
 }
 
+.social-media h3 {
+    display: none;
+    ;
+}
+
 /* Links */
 a {
     text-decoration: none;
