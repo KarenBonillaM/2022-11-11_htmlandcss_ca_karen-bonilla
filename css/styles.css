@@ -142,3 +142,7 @@ footer a {
 .active {
     text-decoration: underline;
 }
+
+.visible-hidden {
+    display: none;
+}
