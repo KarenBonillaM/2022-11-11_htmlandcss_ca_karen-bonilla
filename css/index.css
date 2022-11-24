@@ -1,8 +1,8 @@
 /* Home page */
 
 .promo {
-    background-color: #5f4c3e;
-    color: #fff;
+    background-color: var(--headings-color);
+    color: var(--background-color);
     min-height: 40px;
     text-align: center;
     font-weight: bold;
@@ -22,7 +22,7 @@
 }
 
 .welcome h1 {
-    color: #fff;
+    color: var(--background-color);
     font-size: 3.5em;
     font-weight: bold;
     margin-top: 0;
@@ -34,6 +34,6 @@
 .welcome h2 {
     padding-bottom: 30px;
     font-size: 1.7em;
-    font-family: helvetica, arial, sans-serif;
+    font-family: var(--text-paragraph), arial, sans-serif;
     margin: 0px;
 }

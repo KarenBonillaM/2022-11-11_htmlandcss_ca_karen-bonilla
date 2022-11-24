@@ -13,5 +13,5 @@
 }
 
 .jackets img {
-   border: #0a3641 solid 2px;
+   border: var(--color-footer), solid 2px;
 }

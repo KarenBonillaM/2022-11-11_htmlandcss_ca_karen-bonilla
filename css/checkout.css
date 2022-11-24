@@ -1,5 +1,5 @@
 input {
-    border: 1.5px solid #0a3641;
+    border: 1.5px solid var(--headings-color);
     background-color: #d2d2d2;
     border-radius: 5px;
     width: 184px;
@@ -7,7 +7,7 @@ input {
 }
 
 ::placeholder {
-    color: #0a3641;
+    color: var(--color-footer);
 }
 
 .checkout-main {
@@ -47,7 +47,7 @@ div > .amount {
 }
 
 .checkout-form div {
-    color:#0a3641
+    color: var(--color-footer);
 }
 
 .checkout-form fieldset {

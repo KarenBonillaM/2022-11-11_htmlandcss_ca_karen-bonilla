@@ -20,14 +20,14 @@
 
 .size p {
     display: inline-block;
-    border: #0a3641 solid 1px;
-    background-color: #0a3641;
-    color: #ffff;
+    border: var(--color-footer) solid 1px;
+    background-color: var(--color-footer);
+    color: var(--background-color);
 }
 
 .size p:hover {
-    background-color: #ffff;
-    color: #0a3641;
+    background-color: var(--background-color);
+    color: var(--color-footer);
 }
 
 .buy-jacket {

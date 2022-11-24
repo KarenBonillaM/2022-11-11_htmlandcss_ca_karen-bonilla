@@ -24,7 +24,7 @@
     }
     
     header nav a {
-        color: #0a3641;
+        color: var(--color-footer);
         font-size: 2em;
         font-weight: bold;
     }
@@ -36,7 +36,7 @@
     }
     
     header input {
-        background-color: #ffff;
+        background-color: var(--background-color);
         border-radius: 10px;
         height: 25px;
     }
@@ -204,8 +204,8 @@
     
     /* Links */
     .cta {
-        background-color: #5f4c3e;
-        color: #fff;
+        background-color: var(--headings-color);
+        color: var(--background-color);
         font-size: 1em;
         padding: 10px 25px;
         border-radius: 5px;
@@ -391,8 +391,8 @@
         font-size: 0.7em;
         padding: 6px 10px;
         width: 90px;
-        background-color: #5f4c3e;
-        color: #fff;
+        background-color: var(--headings-color);
+        color: var(--background-color);
         border-radius: 5px;
         display: block;
         margin: auto;

@@ -1,3 +1,5 @@
+@import "imports/variables.css";
+
 @font-face {
     font-family: "libre bodoni";
     font-family: "merriweather";
@@ -14,12 +16,12 @@ footer {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 2px solid #0a3641;
+    border: 2px solid var(--color-footer);
     border-left: 0;
     border-right: 0;
     padding: 10px 0;
     top: 0;
-    background-color: #ffff;
+    background-color: var(--background-color);
     justify-items: center;
 }
 
@@ -47,14 +49,14 @@ header a {
 
 header nav {
     position: absolute;
-    background-color: #ffff;
+    background-color: var(--background-color);
     left: 0;
     top: 1px;
     bottom: -124.017px;
 }
 
 header nav a {
-    color: #5f4c3e;
+    color: var(--headings-color);
 }
 
 .fa-magnifying-glass {
@@ -74,7 +76,7 @@ header nav,
 }
 
 header li {
-    border: #0a3641 1px solid;
+    border: var(--color-footer) 1px solid;
     padding: 15px 30px;
 }
 
@@ -87,18 +89,18 @@ nav ul {
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: var(--text-paragraph), Arial, sans-serif;
     min-height: 100vh;
     margin: 0;
-    color: #0a3641;
+    color: var(--color-footer);
     display: grid;
     grid-template-rows: auto 1fr auto;
     font-size: 1em;
 }
 
 h1 {
-    font-family: "libre bodoni", "merriweather", 'Times New Roman', Times, serif;
-    color: #5f4c3e;
+    font-family: var(--text-heading), "merriweather", 'Times New Roman', Times, serif;
+    color: var(--headings-color);
 }
 
 .logo {
@@ -106,7 +108,7 @@ h1 {
 }
 
 footer {
-    background-color: #0a3641;
+    background-color: var(--color-footer);
     min-height: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -133,7 +135,7 @@ a {
 }
 
 footer a {
-    color: #fff;
+    color: var(--background-color);
     padding-left: 20px;
     font-size: 0.8em;
     text-transform: uppercase;
