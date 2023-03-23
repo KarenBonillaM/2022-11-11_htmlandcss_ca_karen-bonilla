@@ -8,7 +8,7 @@
         display: flex;
         align-items: center;
         justify-self: end;
-        margin-right: 20px;
+        margin-right: 35px;
     }
     
     header nav {
@@ -20,13 +20,18 @@
     header a {
         grid-column: 1;
         justify-self: start;
-        padding-left: 20px;
+        padding-left: 35px;
     }
     
     header nav a {
         color: var(--color-footer);
         font-size: 2em;
         font-weight: bold;
+        font-family: var(--text-heading);
+    }
+
+    header nav a:hover {
+        color: orange;
     }
     
     header li {
@@ -40,11 +45,35 @@
         border-radius: 10px;
         height: 25px;
     }
+
+    .search {
+        display: flex;
+        width: 250px;
+        height: 35px;
+        padding: 5px;
+        border-radius: 25px;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .search > input{
+        flex: 1;
+        height: 25px;
+        outline: none;
+        border: none;
+        align-self: center;
+        font-size: 1em;
+    }
+
+    .search > label {
+        align-self: center;
+    }
+
     
-    .shopping-car {
+    .shopping-cart {
         display: contents;
         font-weight: 700;
-        font-size: 1.7em;
+        font-size: 1.8em;
         margin-right: 20px;
     }
     
@@ -73,6 +102,24 @@
     }
     
     /*Women Men*/
+    .main-image-women img,
+    .main-image-men img {
+        position: sticky;
+        top: 140px;
+        bottom: -30px;
+        min-height: 500px;
+        width: 90%;
+        object-fit: contain;
+    }
+
+    .main-image-women img {
+        height: 30%;
+    }
+
+    .main-image-men img {
+        height: auto;
+    }
+    
     .main-jackets {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -83,7 +130,7 @@
         display: grid;
         grid-template-rows: auto 1fr 1fr 1fr 1fr;
         margin: auto;
-        margin-left: 20px;
+        margin-left: -50px;
         gap: 30px;
     }
     
@@ -96,11 +143,12 @@
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr auto auto 1fr;
-        width: 100%;
+        width: 90%;
         padding-bottom: 50px;
     }
     
-    .div-jackets h2 {
+    .div-jackets h2,
+    .product-title {
         grid-column: 2;
         grid-row: 1;
         align-self: end;
@@ -115,22 +163,24 @@
     .div-jackets p {
         grid-row: 3;
         padding-right: 2opx;
+        max-width: 350px;
     }
     
     .div-jackets .price {
         grid-row: 2;
-    }
+    }   
     
-    .div-jackets img {
+    .div-jackets img,
+    .product-img {
         width: 33%;
         grid-column: 1 / span 2;
         grid-row: 1 / span 5;
         align-self: center;
-        margin-left: 45px;
+        margin-left: 15px;
         border-radius: 15px;
     }
     
-    .div-jackets a {
+    .add-cart {
         grid-column: 2;
         grid-row: 4;
         align-self: start;
@@ -212,7 +262,6 @@
         display: block;
         margin: auto;
         text-align: center;
-        width: 90px;
         font-weight: bold;
     }
 
@@ -271,7 +320,8 @@
     }
     
     /*Woman Men*/
-    .main-image img {
+    .main-image-women img,
+    .main-image-men img {
         display: none;
     }
     
@@ -304,7 +354,7 @@
         border-radius: 5px;
     }
     
-    .div-jackets a {
+    .add-cart {
         grid-row: 3;
     }
     

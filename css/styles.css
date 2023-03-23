@@ -14,6 +14,7 @@ footer {
 }
 
 header {
+    height: 115px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border: 2px solid var(--color-footer);
@@ -23,6 +24,7 @@ header {
     top: 0;
     background-color: var(--background-color);
     justify-items: center;
+    box-shadow: 0 1px 5px hsl(0 4% 15% / 10%);
 }
 
 .hamburguer-icon {
@@ -61,13 +63,24 @@ header nav a {
 
 .fa-magnifying-glass {
     font-weight: 700;
-    font-size: 1.7em;
-    margin-right: 20px;
-    margin-left: 10px;
+    font-size: 1.3em;
+    margin-right: 8px;
 }
 
-.shopping-car {
-    display: none;
+.fa-cart-shopping {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.shop-container {
+    margin-top: 2rem;
+    padding: 0 0 3rem;
+}
+
+.section-title {
+    font-size: 1.5 rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 header nav,
@@ -143,6 +156,7 @@ footer a {
 
 .active {
     text-decoration: underline;
+    color: rgb(128, 3, 3);
 }
 
 .visible-hidden {
