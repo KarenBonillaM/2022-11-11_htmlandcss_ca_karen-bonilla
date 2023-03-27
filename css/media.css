@@ -518,6 +518,29 @@
         padding: 15px;
         font-size: 0.8em;
     }
+
+    /*Sign Up*/
+
+    .sign_up-main {
+        margin: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .sign_up-img {
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .form-element input {
+        width: 30vh;
+        margin-left: 0;
+    }
+
+    .form-element label {
+        font-size: 1rem;
+        font-weight: 600;
+    }
     
     /* Links */
     .cta {
