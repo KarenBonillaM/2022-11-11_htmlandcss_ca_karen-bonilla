@@ -10,23 +10,27 @@
     transition: 0.4s;
 }
 
-.div-jackets p {
-    grid-column: 2;
-}
-
 .jackets img {
    border: var(--color-footer), solid 2px;
 }
 
-.add-cart:hover {
-    background-color: rgb(234, 82, 22);
+.product-title {
+    text-decoration: underline;
+    color: var(--headings-color);
+}
 
+.product-title:hover {
+    color: orange;
+}
+
+.add-cart:hover {
+    background-color: orange;
+    color: var(--color-footer);
 }
 
 .cart {
     position: fixed;
     top: 0;
-    right: -100%;
     width: 360px;
     min-height: 50vh;
     padding: 20px;
@@ -115,6 +119,7 @@
     font-weight: 500;
     cursor: pointer;
     border-radius: 20%;
+    text-transform: uppercase;
 }
 
 .btn-buy:hover {

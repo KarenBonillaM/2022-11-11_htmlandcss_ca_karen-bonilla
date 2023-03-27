@@ -46,7 +46,7 @@ div > .amount {
     padding: 12px 100px 12px 20px;
 }
 
-.checkout-form div {
+.form_check-element {
     color: var(--color-footer);
 }
 
@@ -91,4 +91,11 @@ div > .amount {
 
 .input-submit {
     display: none;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 1rem;
+    margin-top: 2px;
 }

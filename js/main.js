@@ -70,7 +70,7 @@ function ready() {
 }
 //BUY BUTTON
 function buyButtonClicked() {
-    alert("Your order is placed");
+    /*alert("Your order is placed");*/
     var cartContent = document.getElementsByClassName("cart-content")[0];
     while (cartContent.hasChildNodes()) {
         cartContent.removeChild(cartContent.firstChild);
@@ -111,7 +111,7 @@ function addProductToCart(title, price, productImg) {
     let carItems = document.getElementsByClassName("cart-content")[0];
     let cartItemsNames = carItems.getElementsByClassName("cart-product-title");
     for (let i = 0; i < cartItemsNames.length; i++) {
-        if(cartItemsNames[i].innerText == title) {
+        if(cartItemsNames[i].innerText === title.toUpperCase()) {
             alert("You have already add this item to the cart");
             return;
         }   
@@ -122,7 +122,7 @@ let cartBoxContent = `
                     <div class="detail-box">
                         <h2 class="cart-product-title">${title}</h2>
                         <p class="cart-price">${price}</p>
-                        <input type="number" value="1" class="cart-quantity" />
+                        <input type="number" value="1" class="cart-quantity" min="1" max="5" />
                     </div>
                     <!-- Remove Cart -->
                     <i class="fa-regular fa-trash-can cart-remove"></i>
@@ -136,6 +136,13 @@ cartShopBox
 cartShopBox
     .getElementsByClassName("cart-quantity")[0]
     .addEventListener("change", quantityChanged);
+
+
+    if(cartBoxContent === false){
+        cartIcon.style.color = "black";
+    } else {
+        cartIcon.style.color = "red";
+    }
 }
 
 //UPDATE TOTAL
@@ -153,3 +160,11 @@ function updatetotal() {
     }
         document.getElementsByClassName("total-price")[0].innerText = "Kr " + total;
 };
+
+//CART NOTIFICATION
+
+const productsInCart = document.querySelector(".detail-box");
+
+
+
+    

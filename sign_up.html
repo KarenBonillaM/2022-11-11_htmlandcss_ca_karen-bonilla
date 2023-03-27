@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Insulated jacket the best quality" />
-    <title>Rainy Days | Jacket</title>
-    <script src="../js/main.js" defer></script>
+    <meta
+      name="description"
+      content="Buy your favorite jacket ever from Rainy Days"
+    />
+    <title>Rainy Days | Sign Up</title>
+    <script src="./js/form.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@0;1&family=Merriweather:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link href="../css/styles.css" rel="stylesheet" />
-    <link href="../css/jacket.css" rel="stylesheet" />
-    <link href="../css/media.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/sign_up.css" rel="stylesheet" />
+    <link href="./css/media.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/ad1493ca4b.js"
       crossorigin="anonymous"
@@ -60,12 +63,6 @@
         </ul>
       </nav>
       <section class="header-search">
-        <div class="sign-up-container">
-          <a href="../products/checkout.html">
-            <i class="fa-regular fa-user"></i>
-            <span class="visible-hidden">Sign up</span>
-          </a>
-        </div>
         <div class="shopping-cart">
           <a href="../products/jacket.html">
             <i class="fa-solid fa-cart-shopping"></i>
@@ -74,30 +71,48 @@
         </div>
       </section>
     </header>
-    <main class="main-jacket">
-      <section class="red_jacket image-container">
-        <img
-          class="product-img"
-          src="../images/redjacketcut.jpg"
-          alt="insulated high quality red jacket"
-        />
+    <main class="sign_up-main">
+      <section class="form">
+        <form class="sign_up-form">
+          <div class="messageSuccess"></div>
+          <fieldset>
+            <legend>Sign Up</legend>
+            <div class="form-element">
+              <label>
+                Full Name (required)
+                <input type="text" name="name" id="name" label />
+              </label>
+              <div class="form-error" id="fullNameError">
+                Please enter your full name
+              </div>
+            </div>
+            <div class="form-element">
+              <label for="address"
+                >Address
+                <input type="text" name="address" id="address" />
+              </label>
+              <div class="form-error" id="addressError">
+                Please enter a valid address
+              </div>
+            </div>
+            <div class="form-element">
+              <label for="email"
+                >Email (requiered)
+                <input type="email" name="email" id="email" />
+              </label>
+              <div class="form-error" id="emailError">
+                Please enter a valid email address
+              </div>
+            </div>
+          </fieldset>
+          <button class="cta">Submit</button>
+        </form>
       </section>
-      <section class="jacket-info">
-        <div class="title-container">
-          <h1 class="product-title">Insulated jacket</h1>
-        </div>
-        <p>
-          The fabric protects you from wind an rain making this jacket ideal for
-          hiking.
-        </p>
-        <div class="size">
-          <p class="choose-size">S</p>
-          <p class="choose-size">M</p>
-          <p class="choose-size">L</p>
-        </div>
-        <div class="buy-jacket">
-          <a href="../products/checkout.html" class="cta">Buy now</a>
-        </div>
+      <section class="sign_up-img">
+        <img
+          src="../images/man1.jpg"
+          alt="man wearing a red jacket loocking to the sky in the mountains"
+        />
       </section>
     </main>
     <footer>

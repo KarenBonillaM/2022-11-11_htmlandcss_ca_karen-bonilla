@@ -9,6 +9,7 @@
       content="Buy your favorite jacket ever from Rainy Days"
     />
     <title>Rainy Days | Check out</title>
+    <script src="../js/form-checkOut.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@0;1&family=Merriweather:ital@0;1&display=swap"
       rel="stylesheet"
@@ -73,9 +74,10 @@
     <main class="checkout-main">
       <section class="form">
         <form class="checkout-form">
+          <div class="messageSuccess"></div>
           <fieldset>
             <legend>Delivery</legend>
-            <div>
+            <div class="form_check-element">
               <label for="name">Name</label>
               <input
                 type="text"
@@ -84,8 +86,11 @@
                 placeholder="Name"
                 label
               />
+              <div class="form-error" id="fullNameError">
+                Please enter your full name
+              </div>
             </div>
-            <div>
+            <div class="form_check-element">
               <label for="address">Address</label>
               <input
                 type="text"
@@ -93,15 +98,21 @@
                 id="address"
                 placeholder="Address"
               />
+              <div class="form-error" id="addressError">
+                Please enter a valid address
+              </div>
             </div>
-            <div>
+            <div class="form_check-element">
               <label for="email">email</label>
               <input type="email" name="email" id="email" placeholder="Email" />
+              <div class="form-error" id="emailError">
+                Please enter a valid email address
+              </div>
             </div>
           </fieldset>
           <fieldset>
             <legend>Payment</legend>
-            <div>
+            <div class="form_check-element">
               <label for="card_number">Card number</label>
               <input
                 type="tel"
@@ -109,8 +120,11 @@
                 id="card_number"
                 placeholder="Card Number"
               />
+              <div class="form-error" id="cartNumberError">
+                Please enter a valid number
+              </div>
             </div>
-            <div class="card-info">
+            <div class="card-info form_check-element"">
               <div class="card-date">
                 <label for="yyyymm">YYYYMM</label>
                 <input
@@ -119,6 +133,9 @@
                   id="yyyymm"
                   placeholder="YYYY/MM"
                 />
+                <div class="form-error" id="carDateError">
+                  Please enter a valid date
+                </div>
               </div>
               <div class="card-cvv">
                 <label for="cvv">CVV</label>
@@ -127,7 +144,7 @@
             </div>
           </fieldset>
           <a href="../products/checkout_success.html" class="cta">Buy Now</a>
-          <input type="submit" value="Buy Now" class="input-submit" />
+          <button class="cta">Submit</button>
         </form>
       </section>
       <section class="details">

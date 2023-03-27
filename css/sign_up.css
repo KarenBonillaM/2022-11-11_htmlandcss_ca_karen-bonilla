@@ -1,0 +1,42 @@
+.sign_up-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_up-img img {
+    width: 45vh;
+}
+
+legend {
+    font-size: 2rem;
+    font-family: var(--text-heading);   
+    color: var(--headings-color);
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.form-element {
+    margin-bottom: 20px;
+}
+
+.form-element label {
+    justify-content: space-between;
+    display: flex;
+    font-size: 1.3rem;
+    font-family: var(--text-paragraph);
+    font-weight: 400;
+}
+
+.form-element input {
+    margin-left: 15px;
+    border-radius: 8px;
+    background-color: rgb(193, 189, 189);
+    height: 4vh;
+    width: 40vh;
+}
