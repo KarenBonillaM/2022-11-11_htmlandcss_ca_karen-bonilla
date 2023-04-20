@@ -118,7 +118,7 @@ function addProductToCart(title, price, productImg) {
     }
 
 let cartBoxContent = `
-                    <img src="${productImg}" alt="man wearing a red jacket loocking to the sky in the mountains" class="cart-img"/>
+                    <img src="${productImg}" alt="man wearing a red jacket looking to the sky in the mountains" class="cart-img"/>
                     <div class="detail-box">
                         <h2 class="cart-product-title">${title}</h2>
                         <p class="cart-price">${price}</p>
